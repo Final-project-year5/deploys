@@ -1,0 +1,111 @@
+.login-container {
+    position: relative;
+    display: flex;
+    margin-left:100px ;
+    padding:20px ;
+    align-items: center;
+    height: 100vh;
+    width: 60%;
+  }
+  
+  .moving-login-image {
+    position: absolute;
+    top: 50%;
+    margin-right:100px ;
+    right: 20px; /* adjust the position as needed */
+    transform: translateY(-50%);
+    height: 400px; /* adjust the size as needed */
+    width: 35%; /* or set a specific width */
+    animation: moveUpDown 2s infinite alternate; /* adjust animation duration as needed */
+  }
+  
+  @keyframes moveUpDown {
+    0% {
+      transform: translateY(-50%);
+    }
+    100% {
+      transform: translateY(-60%);
+    }
+  }
+  /* LoginForm.css */
+
+/* Style placeholder to span the entire width of the input field */
+.input-placeholder {
+  width: 20%;
+}
+
+/* Adjust other styles as needed */
+
+  .login-box {
+    width: 60%;
+    margin: 50px; /* Adjust as needed */
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px rgba(4, 131, 242, 0.1);
+  }
+  .login-form {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+  }
+  
+  .login-title {
+    color: #3b82f6;
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .login-method {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .login-method input[type='radio'] {
+    margin-right: 5px;
+    padding: 5px;
+  }
+  .login-box label {
+    font-size: 1.1rem;
+    padding: 2px;
+  }
+  
+  .login-box input[type='text'],
+  .login-box input[type='password'] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  .login-box input[type='text']:focus,
+.login-box input[type='password']:focus {
+  border-color: #4299e1;
+  outline: none; /* Remove default focus outline */
+}
+  
+  
+  /* .face-scan-video {
+    width: 80%;
+    margin-bottom: 10px;
+  }
+  
+  .scan-face-button {
+    background-color: #4299e1;
+    color: white;
+    font-size: 1rem;
+    padding: 10px;
+    width: 30%;
+    border: none;
+    margin: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .scan-face-button:hover {
+    background-color: #3182ce;
+  } */

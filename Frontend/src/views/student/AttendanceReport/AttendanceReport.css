@@ -1,0 +1,104 @@
+
+.container {
+  text-align: center;
+  margin-top: 130px;
+}
+.container h1{
+  font-size: larger;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.course-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start; /* Aligns items to the start of the flex container */
+}
+
+.course-item {
+  width: 300px;
+  flex: 1 1 calc(50% - 20px); /* Adjust the width here */
+  margin: 10px;
+  padding: 20px;
+  background-color: lightblue;
+  border-radius: 10px;
+  text-decoration: none;
+  color: black;
+  transition: background-color 0.3s ease;
+}
+
+.course-item:hover {
+  background-color: skyblue;
+}
+
+/* Use this to adjust margin for the last item if there's an odd number of cards */
+.course-item:nth-last-child(2):nth-child(odd) {
+  margin-right: calc(50% - 165px); /* Adjust margin to align the last item with the previous item */
+}
+
+.course-list::after {
+  content: ""; /* This pseudo-element prevents wrapping when there's an odd number of cards */
+  flex: 1 1 calc(50% - 20px); /* Adjust the width here */
+  margin: 10px;
+}
+
+
+.report-card {
+  width: 80%;
+  margin: auto;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.report-card h1 {
+  margin-bottom: 20px;
+}
+
+.report-table {
+  width: 100%; /* Set the width to 100% */
+  border-collapse: collapse;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.report-table th, .report-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.report-table th {
+  background-color: skyblue;
+}
+
+.report-table tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.report-table tbody tr:hover {
+  background-color: #ddd;
+}
+
+
+.back-link {
+  display: inline-block;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  text-decoration: none;
+  color: skyblue; /* Blue color for the link */
+  font-weight: bold; /* Make the text bold */
+  border: 2px solid skyblue; /* Add a border */
+  padding: 10px 20px; /* Add padding */
+  border-radius: 5px; /* Add rounded corners */
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s; /* Add smooth transition */
+}
+
+.back-link:hover {
+  background-color: #007bff; /* Change background color on hover */
+  color: #fff; /* Change text color on hover */
+  border-color: #007bff; /* Change border color on hover */
+  text-decoration: none; /* Remove underline on hover */
+}

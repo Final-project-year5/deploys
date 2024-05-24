@@ -1,0 +1,58 @@
+.permission-page {
+    max-width: 800px;
+    margin-top: 150px ;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .role-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .role-card {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    flex: 1 1 calc(33.33% - 20px);
+  }
+  
+  .role-card h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+    color: #333;
+  }
+  
+  .permissions {
+    margin-top: 20px;
+  }
+  
+  .permissions h4 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    color: #555;
+  }
+  
+  .permissions ul {
+    padding: 0;
+  }
+  
+  .permissions ul li {
+    margin-bottom: 10px;
+  }
+  
+  .permissions label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .permissions input[type="checkbox"] {
+    margin-right: 10px;
+  }
+  

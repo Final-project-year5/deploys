@@ -1,0 +1,59 @@
+.permission-form {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 2px solid skyblue;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.title{
+  font-size: large;
+  font-weight: bold;
+  margin-top: 120px;
+  text-align: center;
+}
+
+.permission-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-group select,
+.form-group input[type="text"],
+.form-group input[type="file"],
+.form-group input[type="checkbox"] {
+  width: 100%;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid skyblue;
+}
+
+.form-group input[type="checkbox"] {
+  width: auto;
+}
+
+/* button[type="submit"] {
+  display: block;
+  /* width: 100%; 
+  padding: 10px;
+  /* background-color: skyblue; 
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+} */
+
+button[type="submit"]:hover {
+  /* background-color: #0056b3; */
+}

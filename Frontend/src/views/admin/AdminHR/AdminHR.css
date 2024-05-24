@@ -1,0 +1,129 @@
+.admin-hr-page {
+  margin-top:130px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.admin-hr-tabs {
+  display: flex;
+  margin-bottom: 40px;
+}
+
+.admin-hr-tab {
+  padding: 15px 30px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 10px 10px 0 0;
+  transition: background-color 0.3s ease;
+}
+
+.admin-hr-tab.active {
+  background-color: #0056b3;
+}
+
+.admin-hr-content {
+  width: 100%;
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 0 0 10px 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Course Management styling */
+.course-management,
+.teacher-management {
+  margin-bottom: 40px;
+}
+
+.add-course-form,
+.add-teacher-form {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+.add-course-form input,
+.add-teacher-form input,
+.add-teacher-form select {
+  padding: 15px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  width: calc(50% - 25px);
+}
+
+.add-course-button,
+.add-teacher-button {
+  padding: 15px 30px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add-course-button:hover,
+.add-teacher-button:hover {
+  background-color: #0056b3;
+}
+
+.course-list-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.course-list-table th,
+.course-list-table td {
+  padding: 15px;
+  border: 1px solid #ccc;
+  text-align: left;
+}
+
+.course-list-table th {
+  background-color: #f4f4f4;
+  font-weight: bold;
+}
+
+/* Teacher Management styling */
+.add-teacher-form select {
+  width: calc(50% - 25px);
+}
+
+.teacher-management h3 {
+  margin-bottom: 20px;
+}
+
+.edit-button {
+  padding: 8px 12px;
+  margin-right: 5px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  background-color: #4CAF50;
+  color: white;
+}
+
+.edit-button:hover {
+  background-color: #45a049;
+}
+
+/* Delete Button */
+.delete-button {
+  padding: 8px 12px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  background-color: #f44336;
+  color: white;
+}
+
+.delete-button:hover {
+  background-color: #d32f2f;
+}
